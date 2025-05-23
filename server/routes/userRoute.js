@@ -1,5 +1,9 @@
 import express from 'express';
 
+class User {
+
+}
+
 const router = express.Router();
 
 router.get("/login", async(req, res) => {
@@ -11,3 +15,5 @@ router.get("/login", async(req, res) => {
         res.status(500).json({ error: 'Internal server error'});
     }
 })
+
+export default User;
